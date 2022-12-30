@@ -339,7 +339,7 @@ footer a{
 @media only screen and (max-width: 640px) {
   .content{
     background-image: url(../Images/phone-about-bg.png);
-    background-size: 640px;
+    background-size: contain;
   }
   h1 {
     margin: auto;
@@ -438,24 +438,6 @@ footer a{
   height: 40vh;
 }
 
-  footer{
-  width: 600px;
-  font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.40);
-  margin: 0;
-  padding: 10px;
-  }
-  
-  footer a{
-    position: fixed; /* Fixed/sticky position */
-    bottom: 10px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    font-size: 18px; /* Increase font size */
-    }
   .menu-bar{
     display: block;
     width: 35px;
@@ -476,9 +458,10 @@ footer a{
 
   .navbar ul {     
     position: fixed;
+    display: block;
+    width: 100%;
     top:-350px;
     left:0;
-    width: 600px;
     height: 100vh;
     padding-top: 60px;
     margin-top: 30px;
@@ -509,5 +492,24 @@ footer a{
     top: 35px;
     right:55px;
   }
-
+/* FOOTER FOOTER FOOTER FOOTER FOOTER */
+  footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.70);
+    padding: 10px;
+    }
+    
+    footer a{
+      position: fixed; /* Fixed/sticky position */
+      bottom: 7px; /* Place the button at the bottom of the page */
+      right: 20px; /* Place the button 30px from the right */
+      z-index: 9999; /* Make sure it does not overlap */
+      color: white; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      font-size: 18px; /* Increase font size */
+      }
 }

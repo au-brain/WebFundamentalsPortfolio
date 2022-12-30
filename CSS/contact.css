@@ -95,7 +95,7 @@ h1 span{
   margin-bottom: 0;
   border-radius: 15px;
   padding: 30px;
-  height: 500px;
+  height: 550px;
 }
 
 .contact-left{
@@ -113,7 +113,7 @@ h1 span{
   color:  rgb(254, 201,61);
   border-radius: 15px;
   width: 500px;
-  height: 450px;
+  height: 505px;
 }
 
 .contact-left p{
@@ -241,7 +241,11 @@ footer a{
 @media only screen and (max-width: 640px) {
   .content{
     background-image: url(../Images/phone-about-bg.png);
-    background-size: 640px;
+    background-size: contain;
+  }
+  .google-extras{
+    background-image: url(../Images/aubrain-contact.png);
+    background-size: cover;
   }
   h1 {
     margin: auto;
@@ -270,9 +274,10 @@ footer a{
 
   .navbar ul {     
     position: fixed;
+    display: block;
+    width: 100%;
     top:-350px;
     left:0;
-    width: 600px;
     height: 100vh;
     padding-top: 60px;
     margin-top: 30px;
@@ -314,7 +319,7 @@ footer a{
     width: auto;
     margin-bottom: 0;
     border-radius: 15px;
-    height: 1000px;
+    height: 1050px;
     
   }
 
@@ -332,13 +337,18 @@ footer a{
     color:  rgb(254, 201,61);
     border-radius: 15px;
     width: auto;
-    height: 450px;
+    height: 505px;
     margin-top: 150px;
   }
   
   .contact-left p{
     margin: 30px 0;
 
+  }
+  .contact-left img{
+    width: 70%;
+    display: block;
+    margin: auto;
   }
 
 /* GOOGLE CALENDAR */
@@ -359,22 +369,22 @@ iframe{
 
   /* FOOTER FOOTER FOOTER FOOTER FOOTER */
   footer{
-  width: 600px;
-  font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.40);
-  margin: 0;
-  padding: 10px;
-  }
-  
-  footer a{
-    position: fixed; /* Fixed/sticky position */
-    bottom: 10px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    font-size: 18px; /* Increase font size */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.70);
+    padding: 10px;
     }
-
+    
+    footer a{
+      position: fixed; /* Fixed/sticky position */
+      bottom: 7px; /* Place the button at the bottom of the page */
+      right: 20px; /* Place the button 30px from the right */
+      z-index: 9999; /* Make sure it does not overlap */
+      color: white; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      font-size: 18px; /* Increase font size */
+      }
 }

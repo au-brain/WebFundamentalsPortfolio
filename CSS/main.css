@@ -157,6 +157,7 @@ h2{
   color:rgb(254, 201,61);
 }
 .course-col1 p{
+  margin-top: 10px;
   font-size: 14px;
 }
 .course-col1 li{
@@ -264,12 +265,12 @@ footer a{
 @media only screen and (max-width: 640px) {
   .content{
     background-image: url(../Images/phone-aubrain-banner.png);
-    background-size: 640px;
+    background-size: contain;
   }
   h1 {
     margin: auto;
     text-align: right;
-    font-size: 80px;
+    font-size: 70px;
     margin-bottom: 50px;
     margin-right: 35px;
   }
@@ -279,18 +280,18 @@ footer a{
   }
   .header-text {
       display: block;
-      margin-top: 30px;
-      width: 500px;
       margin: auto;
+      width: auto;
       margin-top: 10px; 
       color: rgb(255, 255, 255);
       background-color: rgba(0, 0, 0, 0.0);
-    
+      
   }
   .header-text p{
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     font-size: 20px;
+    border-radius: 15px;
   }
 
   #course-output{
@@ -298,10 +299,10 @@ footer a{
   }
   .course-output {
     display: block;
-    width: 500px;
     margin: auto;
+    width: auto;
     margin-bottom: 60px;
-    padding: 20px;
+    padding: 30px;
     color: rgb(206, 195, 195);
     background-color: rgb(0, 0, 0);
     border-radius: 15px;
@@ -313,7 +314,6 @@ footer a{
   .course-1{
     margin-top: 30px;
     display: block;
-
   }
   .row{
     display: block;
@@ -335,8 +335,9 @@ footer a{
     line-height: 30px;
   }
   .course-col2 img{
-    width: 460px;
+    display: block;
     margin: auto;
+    width: 90%;
   }
   
   .certificates {
@@ -346,28 +347,12 @@ footer a{
     width:auto;
     border-radius: 0;
     margin: 0 0;
+    padding-bottom: 40px;
   }
   
   
   
-  footer{
-  width: 600px;
-  font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.40);
-  margin: 0;
-  padding: 10px;
-  }
-  
-  footer a{
-    position: fixed; /* Fixed/sticky position */
-    bottom: 10px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    font-size: 18px; /* Increase font size */
-    }
+ 
 
 /* NAVBAR ICONS FOR SMALL SCREENS NAVBAR ICONS FOR SMALL SCREENS NAVBAR ICONS FOR SMALL SCREENS */
   .menu-bar{
@@ -398,9 +383,10 @@ nav ul .fas{
 
   .navbar ul {     
     position: fixed;
+    display: block;
+    width: 100%;
     top:-350px;
     left:0;
-    width: 600px;
     height: 100vh;
     padding-top: 60px;
     margin-top: 30px;
@@ -412,6 +398,7 @@ nav ul .fas{
     padding: 10px;
     display: block;
     margin: 0 auto;
+    width: 100%;
     margin-bottom: 2px;
     text-align: center;
   }
@@ -440,4 +427,25 @@ nav ul .fas{
     width: 360px;
     height: 240px;
   }
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER */
+  footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.70);
+    padding: 10px;
+    }
+    
+    footer a{
+      position: fixed; /* Fixed/sticky position */
+      bottom: 7px; /* Place the button at the bottom of the page */
+      right: 20px; /* Place the button 30px from the right */
+      z-index: 9999; /* Make sure it does not overlap */
+      color: white; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      font-size: 18px; /* Increase font size */
+      }
 }
