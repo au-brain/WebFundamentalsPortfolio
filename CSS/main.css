@@ -86,10 +86,14 @@ border-radius:15px;
 padding: 20px;
 
 }
-.header-text a{
+.header-text p a{
   color:white;
-}
 
+}
+.header-text p a:hover{
+  color:rgb(22,105,161);
+  
+}
 .header-text p span{
   color: rgb(254, 201,61);
 }
