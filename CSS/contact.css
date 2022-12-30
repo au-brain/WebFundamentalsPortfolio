@@ -148,6 +148,10 @@ h1 span{
   transform: translateY(-5px);
 }
 
+.visually-hidden{
+  display: none;
+}
+
 .contact-right form{
  width: 100%;
 }
