@@ -14,6 +14,30 @@ html {
   background-color: #808080;
   background-size: 1280px;
 }
+
+
+/* NAVBAR ICONS FOR SMALL SCREENS NAVBAR ICONS FOR SMALL SCREENS NAVBAR ICONS FOR SMALL SCREENS */
+.menu-bar{
+  display: none;
+  
+}
+ .xmark-solid{
+  display: none;
+}
+
+i{
+  color: rgb(254, 201,61);
+}
+nav .fas{
+  display:none;
+}
+
+
+
+
+/* ------------------------------------------------------------- */
+
+
 .navbar{
   padding: 15px;
 }
@@ -185,6 +209,21 @@ h2{
 .certificates li a:hover{
   color:rgb(22,105,161);
 }
+
+
+
+#demo{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#youtube-video {
+  display: flex;
+  justify-content: Center;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+
 footer{
   position:fixed;
   bottom:0;
@@ -205,20 +244,10 @@ footer a{
   cursor: pointer; /* Add a mouse pointer on hover */
   font-size: 18px; /* Increase font size */
   }
- .menu-bar{
-  display: none;
-  
-}
- .xmark-solid{
-  display: none;
-}
-
-
-
 
 
 /* THIS IS THE CSS FOR THE MEDIA QUERY */
-@media only screen and (max-width: 1250px) {
+/* @media only screen and (max-width: 1250px) {
   .certificates {
     display: block;
     position: absolute;
@@ -231,7 +260,8 @@ footer a{
   .certificates ol {
     margin-bottom: 30px;
   }
-}
+} */
+
 
 
 @media only screen and (max-width: 640px) {
@@ -275,7 +305,7 @@ footer a{
     margin: auto;
     margin-bottom: 60px;
     padding: 20px;
-    color: rgb(233, 233, 233);
+    color: rgb(206, 195, 195);
     background-color: rgb(0, 0, 0);
     border-radius: 15px;
   }
@@ -314,11 +344,15 @@ footer a{
   
   .certificates {
     display: block;
-    width: 630px;
-    margin-top: -60px;
-    margin-bottom: 40px;
-    margin-right: 40px;
+    float: none;
+    margin: auto;
+    width:auto;
+    border-radius: 0;
+    margin: 0 0;
   }
+  
+  
+  
   footer{
   width: 600px;
   font-size: 14px;
@@ -337,16 +371,30 @@ footer a{
     cursor: pointer; /* Add a mouse pointer on hover */
     font-size: 18px; /* Increase font size */
     }
+
+/* NAVBAR ICONS FOR SMALL SCREENS NAVBAR ICONS FOR SMALL SCREENS NAVBAR ICONS FOR SMALL SCREENS */
   .menu-bar{
     display: block;
     width: 30px;
     cursor:pointer;
   }
-  
    .xmark-solid{
     display: block;
     width: 40px;
   }
+
+ nav .fas{
+  display:block;
+  font-size: 30px;
+ }
+
+nav ul .fas{
+  position: absolute;
+  top:25px;
+}
+
+
+
   .navbar{
     display: block;
   } 
@@ -387,4 +435,25 @@ footer a{
     right:55px;
   }
 
+
+  .demo h2{
+    display: block;
+    font-size: 50px;
+    color:  rgb(255, 255, 255);
+    padding: 30px;
+  }
+  #youtube-video {
+    display: block;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    margin-left: 30px;
+  }
+
+  #youtube-video iframe{
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: auto;
+  height: auto;
+  }
 }

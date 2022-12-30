@@ -103,7 +103,6 @@ padding: 20px;
   background-color: black;
   margin-top: 30px;
   margin-bottom: 0px;
- 
 }
 
 .container{
@@ -163,6 +162,11 @@ padding: 20px;
 .references ul li a{
   color:rgb(254, 201,61);
 }
+.references ul li a:hover{
+  color:rgb(22,105,161);
+}
+
+
 /* THIS ARTICLE IS FOR THE CREDENTIALS SECTIONS */
 
 #credentials{
@@ -340,7 +344,7 @@ footer a{
   h1 {
     margin: auto;
     text-align: center;
-    font-size: 80px;
+    font-size: 60px;
   }
 
   #about{
@@ -392,6 +396,9 @@ footer a{
 }
 .references ul li a{
   color:rgb(254, 201,61);
+}
+.references ul li a:hover{
+  color:rgb(22,105,161);
 }
 
 #credentials{
