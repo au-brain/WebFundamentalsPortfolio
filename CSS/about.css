@@ -186,7 +186,7 @@ padding: 20px;
 
 .tab-links{
   margin-left: 150px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
@@ -225,6 +225,7 @@ padding: 20px;
 .tab-contents{
   display: none;
   height: 185px;
+  margin-top: 25px;
 }
 
 .tab-contents.active-tab{
