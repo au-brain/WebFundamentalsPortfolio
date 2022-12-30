@@ -10,9 +10,10 @@ html {
 }
 .content {
   margin: 0; 
-  background-image: url(../Images/aubrain-banner.png);
+  background-image: url(../Images/about-bg.png);
   background-color: #808080;
   background-size: 1280px;
+
 }
 .navbar{
   padding: 15px;
@@ -101,11 +102,12 @@ padding: 20px;
   color: rgb(233, 233, 233);
   background-color: black;
   margin-top: 30px;
+  margin-bottom: 0px;
  
 }
 
 .container{
-  margin: 10px 100px;
+  margin: 0px 100px;
 }
 .row{
   display: flex ;
@@ -132,25 +134,59 @@ padding: 20px;
   margin-bottom: 30px;
 }
 
+/* THIS IS THE ASIDE REFERENCES */
+.references{
+  display: inline-block;
+  background-color: black;
+  width: 250px;
+  height: 350px;
+  margin: 35px 0px;
+  margin-left: 20px;
+  padding: 20px;
+  color: rgb(233, 233, 233);
+  border-radius: 15px;
+}
+
+.references ul li {
+  margin-top:20px;
+  text-align: center;
+  list-style: none;
+  color: white;
+  font-size: 18px;
+}
+
+.references ul li span{
+  color:rgb(233, 233, 233);
+  font-size: 14px;
+}
+
+.references ul li a{
+  color:rgb(254, 201,61);
+}
 /* THIS ARTICLE IS FOR THE CREDENTIALS SECTIONS */
 
 #credentials{
+  display: inline;
+  float: right;
+}
+.credentials{
+  padding: 20px;
   background-color: black;
   color:  rgb(254, 201,61);
-  margin: 0px 20px;
+  margin: 35px 20px;
   border-radius: 15px;
   width: 940px;
-  height: 940px;
+  height: 350px;
+  position: relative;
 }
-
 .tab-titles{
   display: flex;
-  margin: 50px;
+  margin: 0px 50px;
 }
 
 .tab-links{
   margin-left: 150px;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
@@ -171,6 +207,64 @@ padding: 20px;
   width:50%;
 
 }
+
+.tab-contents ul li {
+  margin-left: 30px;
+  text-align: center;
+  list-style: none;
+  margin: 15px 0;
+  color: white;
+  font-size: 18px;
+}
+
+.tab-contents ul li span{
+  color:rgb(254, 201,61) ;
+  font-size: 14px;
+}
+
+.tab-contents{
+  display: none;
+  height: 185px;
+}
+
+.tab-contents.active-tab{
+  display: block;
+}
+
+
+.download{
+  z-index: 99;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.download a{
+  padding: 16px 35px;
+  text-decoration: none;
+  border: 1px solid rgb(254, 201,61) ;
+  background-color: transparent;
+  letter-spacing: 2px;
+  color: rgb(254, 201,61) ;
+  margin: 0 auto;
+ 
+}
+.download a:hover{
+  border: 1px solid rgb(0, 0, 0) ;
+  background-color: rgb(254, 201,61) ;
+  letter-spacing: 4px;
+  color: rgb(0, 0, 0) ;
+}
+
+
+/* CERTIFICATE CAROUSEL SECTION CERTIFICATE CAROUSEL SECTION CERTIFICATE CAROUSEL SECTION */
+
+#certificates{
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
+}
+
 
 
 
@@ -200,8 +294,9 @@ footer a{
   }
  .menu-bar{
   display: none;
-  
+
 }
+
  .xmark-solid{
   display: none;
 }
@@ -211,20 +306,7 @@ footer a{
 
 
 /* THIS IS THE CSS FOR THE MEDIA QUERY */
-@media only screen and (max-width: 1250px) {
-  .certificates {
-    display: block;
-    position: absolute;
-    width: 1280px;
-    margin-top: -30px;
-    margin-bottom: 50px;
-    margin-right: 40px;
-    border-radius: 0;
-  }
-  .certificates ol {
-    margin-bottom: 30px;
-  }
-}
+
 
 
 @media only screen and (max-width: 640px) {
@@ -330,8 +412,12 @@ footer a{
     }
   .menu-bar{
     display: block;
-    width: 30px;
+    width: 35px;
     cursor:pointer;
+    /* 
+    width: 45px;
+    border: 2px solid black;
+    padding: 5px; */
   }
   
    .xmark-solid{

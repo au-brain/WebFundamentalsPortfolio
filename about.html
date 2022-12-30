@@ -25,8 +25,10 @@
         </nav> 
     </header>
     <main>
+      <!-- THIS IS THE MAIN SECTION -->
       <section>
         <h1>About Me</h1>
+        <!-- THIS IS THE ABOUT ME ARTICLE -->
         <article>
           <div id="about">
             <div class = "container">
@@ -43,13 +45,60 @@
             </div>
           </div>
         </article>
-        <article id="credentials">
-          <div class="tab-titles">
-            <p class="tab-links active-link">Skills</p>
-            <p class="tab-links">Experience</p>
-            <p class="tab-links">Education</p>
+        
+        <!-- THIS IS REFERENCES ASIDE -->
+        <aside class="references">
+          <div>
+            <h3>Character References</h3>
+            <ul>
+              <li><a href="">Engr. Michael Kent Ybañez</a><br><span>QA Automation Engineer</span></li>
+              <li><a href="">Engr. Kevin Mendi</a><br><span>Software Engineer</span></li>
+              <li><a href="">Engr. Edjie Mel Rubio</a><br><span>Freelancer</span></li>
+            </ul>
           </div>
-          <div class="tab-contents"></div>
+        </aside>
+
+        <!-- THIS IS THE CREDENTIALS ARTICLE -->
+        <article id="credentials">
+          <div class="credentials">
+            <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('expr')">Experience</p>
+            <p class="tab-links" onclick="opentab('educ')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Basic Web Development</span><br>Building Web Applications</li>
+              <li><span>IT Technical Support</span><br>Computer & Network Troubleshooting</li>
+              <li><span>Graphic Design</span><br>Designing Digital Graphics</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="expr">
+            <ul>
+              <li><span>2022 - Present</span><br>IT Officer  | Dev Partners Recruitment</li>
+              <li><span>2019 - 2022</span><br>Infotech Staff | Gaisano Capital</li>
+              <!-- <li><span>Graphic Design</span><br>Designing Digital Graphics</li> -->
+            </ul>
+          </div>
+          <div class="tab-contents" id="educ">
+            <ul>
+              <li><span>2019</span><br>BS Computer Engineering | University of Mindanao</li>
+              <!-- <li><span>IT Technical Support</span><br>Computer & Network Troubleshooting</li>
+              <li><span>Graphic Design</span><br>Designing Digital Graphics</li> -->
+            </ul>
+          </div>
+          <div class="download">
+           <a href="Aubrain-Virtual-Resume.pdf" download>Download Resume</a>
+          </div>
+          
+        </div>  
+        </article>
+      <!-- THIS IS THE CERTIFICATE CAROUSEL SECTION  -->
+      </section>
+      <section id="certificates">
+        <h2>Certificates</h2>
+        <article class="carousel">
+
         </article>
       </section>
     </main>
