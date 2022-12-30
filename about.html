@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="CSS/about.css">
   <link rel="shortcut icon" href="Images/aubrain-icon.ico">
   <title>Aubrain - About Me</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
   <div class = "content">
@@ -95,10 +98,30 @@
         </article>
       <!-- THIS IS THE CERTIFICATE CAROUSEL SECTION  -->
       </section>
-      <section id="certificates">
-        <h2>Certificates</h2>
-        <article class="carousel">
-
+      <section>
+        <article class="certificates">
+          <h2>Certificates</h2>
+          <div class="carousel">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="Images/Certificates/introduction-to-html5-certif.jpg" alt="Introduction to HTML5"></div>
+                <div class="swiper-slide"><img src="Images/Certificates/introduction-to-css3-certif.jpg" alt="Introduction to CSS3"></div>
+                <div class="swiper-slide"><img src="Images/Certificates/interactivity-with-javascript-certif.jpg" alt="Interactivity with JavaScript"></div>
+                <div class="swiper-slide"><img src="Images/Certificates/responsive-design-certif.jpg" alt="Advanced Styling with Responsive Design"></div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            
+              
+            </div>
+          </div>
         </article>
       </section>
     </main>
@@ -110,5 +133,26 @@
   </footer>
 
  <script src="Javascript/main.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+ <script>
+  const swiper = new Swiper('.swiper', {
+  autoplay:{
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+ </script>
 </body>
 </html>

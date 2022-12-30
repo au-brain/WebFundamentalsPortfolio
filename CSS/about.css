@@ -259,18 +259,37 @@ padding: 20px;
 
 
 /* CERTIFICATE CAROUSEL SECTION CERTIFICATE CAROUSEL SECTION CERTIFICATE CAROUSEL SECTION */
-
-#certificates{
-  display: block;
-  background-color: rgba(0, 0, 0, 0.7);
-  margin: 0 auto;
+.certificates h2{
+  text-align: center;
+  color:  rgb(255, 255, 255);
+  text-shadow: 2px 2px rgb(18, 18, 18);
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.carousel{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.70);
 }
 
+.swiper{
+  width: 80%;
+  height: fit-content;
+}
 
+.swiper-slide img{
+  margin-top: 50px;
+  margin-left: 200px;
+  height: 80vh;
+}
 
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+  color: rgb(254, 201,61) ;
+}
 
-
-
+.swiper .swiper-pagination-bullet-active{
+  background-color: rgb(254, 201,61) ;
+}
 
 
 
@@ -284,6 +303,7 @@ footer{
   background-color: rgba(0, 0, 0, 0.70);
   padding: 10px;
   width: 100%;
+  z-index: 9999;
 }
 footer a{
   position: fixed; /* Fixed/sticky position */
@@ -314,87 +334,103 @@ footer a{
 
 @media only screen and (max-width: 640px) {
   .content{
-    background-image: url(../Images/phone-aubrain-banner.png);
+    background-image: url(../Images/phone-about-bg.png);
     background-size: 640px;
   }
   h1 {
     margin: auto;
-    text-align: right;
+    text-align: center;
     font-size: 80px;
-    margin-bottom: 50px;
-    margin-right: 35px;
   }
 
-  #main-section{
+  #about{
     width:auto;
   }
-  .header-text {
-      display: block;
-      margin-top: 30px;
-      width: 500px;
-      margin: auto;
-      margin-top: 10px; 
-      color: rgb(255, 255, 255);
-      background-color: rgba(0, 0, 0, 0.0);
-    
+  .container{
+    margin: 0px 50px;
   }
-  .header-text p{
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    font-size: 20px;
+  .about-col1, .about-col2{
+    flex-basis: 100%;
   }
 
-  #course-output{
-    margin-top: 50px;
-  }
-  .course-output {
-    display: block;
-    width: 500px;
-    margin: auto;
-    margin-bottom: 60px;
-    padding: 20px;
-    color: rgb(233, 233, 233);
-    background-color: rgb(0, 0, 0);
-    border-radius: 15px;
-  }
-
-  
-  .course-1{
-    margin-top: 30px;
-    display: block;
-
-  }
-  .row{
-    display: block;
-  }
-  
-  .course-col1{
-    display: block;
-    margin: 10px;
-  }
-  .course-col1 h3{
-    font-size: 25px;
-  }
-
-  .course-col1 p{
-    font-size: 20px;
-  }
-  .course-col1 li{
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .course-col2 img{
-    width: 460px;
+  .about-col1 img{
     margin: auto;
   }
+
+ .about-col2 h2{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+ }
+
+ .about-col2 p{
+  font-size: 14px;
+  text-align:justify;
   
-  .certificates {
-    display: block;
-    width: 630px;
-    margin-top: -60px;
-    margin-bottom: 40px;
-    margin-right: 40px;
-  }
+ }
+
+ .references{
+  display: block;
+  margin: 30px;
+  width:auto;
+  height: 330px;
+  padding: 30px;
+  color: rgb(233, 233, 233);
+  border-radius: 15px;
+}
+.references h3{
+  text-align: center;
+  font-size: 30px;
+}
+
+.references ul li {
+  margin-top:30px;
+  font-size: 18px;
+}
+.references ul li span{
+  font-size: 16px;
+}
+.references ul li a{
+  color:rgb(254, 201,61);
+}
+
+#credentials{
+  display: block;
+  float: none;
+}
+.credentials{
+  margin: auto;
+  display: block;
+  width:auto;
+  padding: 30px;
+  background-color: black;
+  color:  rgb(254, 201,61);
+  height: 350px;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+
+.tab-titles{
+  display: flex;
+  width: auto;
+}
+
+.tab-links{
+  margin: 0px 30px; 
+  font-size: 20px;
+  width: auto;
+}
+
+.carousel{
+  height: 50vh;
+}
+
+.swiper-slide img{
+  margin: 30px 0px;
+  width: auto;
+  height: 40vh;
+}
+
   footer{
   width: 600px;
   font-size: 14px;
