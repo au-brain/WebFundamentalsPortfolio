@@ -277,10 +277,12 @@ padding: 20px;
 footer{
   position:fixed;
   bottom:0;
-  margin: 10px;
-  margin-left: 25px;
+  margin: 0px;
   color:  rgb(254, 201,61);
   font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.70);
+  padding: 10px;
+  width: 100%;
 }
 footer a{
   position: fixed; /* Fixed/sticky position */
