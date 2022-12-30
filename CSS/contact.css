@@ -184,6 +184,15 @@ button:hover{
   
 }
 
+#msg{
+  display: block;
+  float: right;
+  margin-top: -30px;
+}
+
+
+
+
 /* GOOGLE CALENDAR */
 #calendar{
   background-color: black;
