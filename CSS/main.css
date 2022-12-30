@@ -210,17 +210,14 @@ h2{
   color:rgb(22,105,161);
 }
 
-
-
 #demo{
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-#youtube-video {
+.video {
   display: flex;
   justify-content: Center;
   padding-bottom: 40px;
-  padding-top: 30px;
 }
 
 
@@ -435,25 +432,12 @@ nav ul .fas{
     right:55px;
   }
 
-
-  .demo h2{
+  .video video{
     display: block;
-    font-size: 50px;
-    color:  rgb(255, 255, 255);
-    padding: 30px;
-  }
-  #youtube-video {
-    display: block;
+    margin: auto;
+    justify-content: Center;
     padding-bottom: 40px;
-    padding-top: 30px;
-    margin-left: 30px;
-  }
-
-  #youtube-video iframe{
-  display: block;
-  margin: auto;
-  margin-bottom: 20px;
-  width: auto;
-  height: auto;
+    width: 360px;
+    height: 240px;
   }
 }
