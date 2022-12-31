@@ -341,6 +341,12 @@ footer a{
     width: auto;
     
   }
+
+  .contact-left p i{
+    margin: 0px 5px;
+    color: rgb(254, 201,61);
+    font-size: 20px;
+  }
   
   .contact-right{
     display: block;

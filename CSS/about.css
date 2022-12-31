@@ -346,7 +346,7 @@ footer a{
     text-align: center;
     font-size: 60px;
   }
-
+/* THIS IS FOR THE ABOUT SECTION THIS IS FOR THE ABOUT SECTION THIS IS FOR THE ABOUT SECTION */
   #about{
     width:auto;
   }
@@ -368,11 +368,12 @@ footer a{
  }
 
  .about-col2 p{
-  font-size: 14px;
+  font-size: 18px;
   text-align:justify;
   
  }
-
+/* 
+ REFERENCES ASIDE SECTION REFERENCES ASIDE SECTION REFERENCES ASIDE SECTION REFERENCES ASIDE SECTION */
  .references{
   display: block;
   margin: 30px;
@@ -384,7 +385,7 @@ footer a{
 }
 .references h3{
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .references ul li {
@@ -392,7 +393,7 @@ footer a{
   font-size: 18px;
 }
 .references ul li span{
-  font-size: 16px;
+  font-size: 14px;
 }
 .references ul li a{
   color:rgb(254, 201,61);
@@ -400,14 +401,14 @@ footer a{
 .references ul li a:hover{
   color:rgb(22,105,161);
 }
-
+/* CREDENTIALS SECTION CREDENTIALS SECTION CREDENTIALS SECTION CREDENTIALS SECTION  */
 #credentials{
   display: block;
   float: none;
 }
 .credentials{
-  margin: auto;
   display: block;
+  margin: auto;
   width:auto;
   padding: 30px;
   background-color: black;
@@ -420,18 +421,23 @@ footer a{
 .tab-titles{
   display: flex;
   width: auto;
+  margin: auto;
 }
 
 .tab-links{
-  margin: 0px 30px; 
+  margin: 0 auto;
   font-size: 20px;
   width: auto;
 }
 
+
+/* CAROUSEL CERTIFICATE CAROUSEL CERTIFICATE CAROUSEL CERTIFICATE CAROUSEL CERTIFICATE */
 .carousel{
   height: 50vh;
 }
-
+.certificates{
+  padding-bottom: 30px;
+}
 .swiper-slide img{
   margin: 30px 0px;
   width: auto;
