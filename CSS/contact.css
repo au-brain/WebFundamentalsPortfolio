@@ -1,5 +1,5 @@
-*{
-  margin: 0; 
+* {
+  margin: 0;
   padding: 0;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   box-sizing: border-box;
@@ -8,8 +8,9 @@
 html {
   scroll-behavior: smooth;
 }
+
 .content {
-  margin: 0; 
+  margin: 0;
   background-image: url(../Images/about-bg.png);
   background-color: #808080;
   background-size: 1280px;
@@ -17,18 +18,18 @@ html {
 }
 
 /* THIS IS NAVBAR STYLE DO NOT EDIT */
-.navbar{
+.navbar {
   padding: 15px;
 }
 
 .navbar {
-display: flex;
-align-items: center;
-justify-content: space-between;
-flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.logo{
+.logo {
   width: 130px;
 }
 
@@ -36,8 +37,9 @@ flex-wrap: wrap;
   display: inline-block;
   list-style: none;
 }
+
 nav ul li a {
-  color:white;
+  color: white;
   text-decoration: none;
   font-size: 18px;
   margin-right: 100px;
@@ -45,50 +47,55 @@ nav ul li a {
 }
 
 nav a.active {
-  color: rgb(254, 201,61);
-  border-bottom: 4px solid rgb(254, 201,61);
+  color: rgb(254, 201, 61);
+  border-bottom: 4px solid rgb(254, 201, 61);
   text-shadow: 2px 2px rgb(53, 53, 53);
 }
-nav ul li a::after{
+
+nav ul li a::after {
   content: '';
   width: 0;
   height: 4px;
-  background: rgb(254, 201,61);
+  background: rgb(254, 201, 61);
   position: absolute;
   left: 0;
   top: -6px;
   transition: 0.5s;
 }
-nav ul li a:hover::after {  
-  width: 100%; 
+
+nav ul li a:hover::after {
+  width: 100%;
 }
-.navbar ul li a:hover{
-  color: rgb(254, 201,61);
+
+.navbar ul li a:hover {
+  color: rgb(254, 201, 61);
   text-shadow: 2px 2px rgb(53, 53, 53);
 }
 
 h1 {
-  color:white;
+  color: white;
   font-size: 50px;
   margin-left: 500px;
   text-shadow: 2px 2px rgb(18, 18, 18);
 }
-h1 span{
-  color: rgb(254, 201,61);
+
+h1 span {
+  color: rgb(254, 201, 61);
 }
 
-.menu-bar{
+.menu-bar {
   display: none;
 
 }
 
- .xmark-solid{
+.xmark-solid {
   display: none;
 }
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* CONTACT CONTACT CONTACT CONTACT */
-.row{
+.row {
   background-color: rgba(0, 0, 0, 0.70);
   color: white;
   margin: 30px 200px;
@@ -98,43 +105,43 @@ h1 span{
   height: 550px;
 }
 
-.contact-left{
+.contact-left {
   display: inline-block;
   width: 300px;
   height: 350px;
   color: rgb(233, 233, 233);
 }
 
-.contact-right{
+.contact-right {
   display: inline;
   float: right;
   padding: 20px;
   background-color: black;
-  color:  rgb(254, 201,61);
+  color: rgb(254, 201, 61);
   border-radius: 15px;
   width: 500px;
   height: 505px;
 }
 
-.contact-left p{
-  margin: 30px  0;
+.contact-left p {
+  margin: 30px 0;
 }
 
-.contact-left img{
+.contact-left img {
   display: block;
 }
 
-.contact-left p i{
+.contact-left p i {
   margin: 0px 20px;
-  color: rgb(254, 201,61);
+  color: rgb(254, 201, 61);
   font-size: 25px;
 }
 
-.social-icons{
+.social-icons {
   margin: 30px 20px;
 }
 
-.social-icons a{
+.social-icons a {
   text-decoration: none;
   font-size: 30px;
   margin-right: 20px;
@@ -143,20 +150,21 @@ h1 span{
   transition: transform 0.5s;
 }
 
-.social-icons a:hover{
-  color: rgb(254, 201,61);
+.social-icons a:hover {
+  color: rgb(254, 201, 61);
   transform: translateY(-5px);
 }
 
-.visually-hidden{
+.visually-hidden {
   display: none;
 }
 
-.contact-right form{
- width: 100%;
+.contact-right form {
+  width: 100%;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   border: 0;
   outline: none;
@@ -172,23 +180,23 @@ button {
   z-index: 99;
   padding: 30px;
   padding: 16px 35px;
-  border: 1px solid rgb(254, 201,61) ;
+  border: 1px solid rgb(254, 201, 61);
   background-color: transparent;
   letter-spacing: 2px;
-  color: rgb(254, 201,61) ;
+  color: rgb(254, 201, 61);
   margin: 0 auto;
   cursor: pointer;
 }
- 
-button:hover{
-  border: 1px solid rgb(0, 0, 0) ;
-  background-color: rgb(254, 201,61) ;
+
+button:hover {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(254, 201, 61);
   letter-spacing: 4px;
-  color: rgb(0, 0, 0) ;
-  
+  color: rgb(0, 0, 0);
+
 }
 
-#msg{
+#msg {
   display: block;
   float: right;
   margin-top: -30px;
@@ -198,17 +206,18 @@ button:hover{
 
 
 /* GOOGLE CALENDAR */
-#calendar{
+#calendar {
   background-color: black;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
-.google-extras{
+.google-extras {
   background-image: url(../Images/aubrain-contact.png);
   background-size: cover;
 }
-iframe{
+
+iframe {
 
   margin: 30px 60px;
   width: 500px;
@@ -220,27 +229,36 @@ iframe{
 
 
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER  */
-footer{
-  position:fixed;
-  bottom:0;
+footer {
+  position: fixed;
+  bottom: 0;
   margin: 0px;
-  color:  rgb(254, 201,61);
+  color: rgb(254, 201, 61);
   font-size: 12px;
   background-color: rgba(0, 0, 0, 0.70);
   padding: 10px;
   width: 100%;
   z-index: 9999;
 }
-footer a{
-  position: fixed; /* Fixed/sticky position */
-  bottom: 10px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  font-size: 18px; /* Increase font size */
-  }
+
+footer a {
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 10px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  font-size: 18px;
+  /* Increase font size */
+}
 
 
 
@@ -252,14 +270,16 @@ footer a{
 
 
 @media only screen and (max-width: 640px) {
-  .content{
+  .content {
     background-image: url(../Images/phone-about-bg.png);
     background-size: contain;
   }
-  .google-extras{
+
+  .google-extras {
     background-image: url(../Images/aubrain-contact.png);
     background-size: cover;
   }
+
   h1 {
     margin: auto;
     text-align: center;
@@ -267,37 +287,38 @@ footer a{
   }
 
   /* NAVBAR NAVBAR NAVBAR NAVBAR */
-  .menu-bar{
+  .menu-bar {
     display: block;
     width: 35px;
-    cursor:pointer;
+    cursor: pointer;
     /* 
     width: 45px;
     border: 2px solid black;
     padding: 5px; */
   }
-  
-   .xmark-solid{
+
+  .xmark-solid {
     display: block;
     width: 40px;
   }
-  .navbar{
-    display: block;
-  } 
 
-  .navbar ul {     
+  .navbar {
+    display: block;
+  }
+
+  .navbar ul {
     position: fixed;
     display: block;
     width: 100%;
-    top:-350px;
-    left:0;
+    top: -350px;
+    left: 0;
     height: 100vh;
     padding-top: 60px;
     margin-top: 30px;
     transition: 0.5s;
   }
 
-  .navbar ul li{  
+  .navbar ul li {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
     display: block;
@@ -306,24 +327,26 @@ footer a{
     text-align: center;
   }
 
-  .navbar ul li a {  
+  .navbar ul li a {
     margin-bottom: 5px;
     font-size: 30px;
   }
-  .navbar ul .xmark-solid{
-    background-color:  rgb(254, 201,61);
+
+  .navbar ul .xmark-solid {
+    background-color: rgb(254, 201, 61);
     position: fixed;
     cursor: pointer;
     padding: 5px;
   }
-  .navbar .menu-bar{
+
+  .navbar .menu-bar {
     position: absolute;
     top: 35px;
-    right:55px;
+    right: 55px;
   }
 
 
-  .row{
+  .row {
     display: block;
     float: none;
     background-color: rgba(0, 0, 0, 0.70);
@@ -333,61 +356,62 @@ footer a{
     margin-bottom: 0;
     border-radius: 15px;
     height: 1050px;
-    
+
   }
 
-  .contact-left{
+  .contact-left {
     display: block;
     width: auto;
-    
+
   }
 
-  .contact-left p i{
+  .contact-left p i {
     margin: 0px 5px;
-    color: rgb(254, 201,61);
+    color: rgb(254, 201, 61);
     font-size: 20px;
   }
-  
-  .contact-right{
+
+  .contact-right {
     display: block;
     float: none;
     padding: 20px;
     background-color: black;
-    color:  rgb(254, 201,61);
+    color: rgb(254, 201, 61);
     border-radius: 15px;
     width: auto;
     height: 505px;
     margin-top: 150px;
   }
-  
-  .contact-left p{
+
+  .contact-left p {
     margin: 30px 0;
 
   }
-  .contact-left img{
+
+  .contact-left img {
     width: 70%;
     display: block;
     margin: auto;
   }
 
-/* GOOGLE CALENDAR */
-#calendar{
-  display: block;
-  float: none;
-  background-color: black;
-  padding: 40px;
-}
-iframe{
-  display: block;
-  margin: auto;
-  margin-bottom: 20px;
-  width: auto;
-  height: 400px;
-}
+  /* GOOGLE CALENDAR */
+  #calendar {
+    display: block;
+    float: none;
+    background-color: black;
+    padding: 40px;
+  }
 
+  iframe {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    width: auto;
+    height: 400px;
+  }
 
   /* FOOTER FOOTER FOOTER FOOTER FOOTER */
-  footer{
+  footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -395,15 +419,15 @@ iframe{
     font-size: 12px;
     background-color: rgba(0, 0, 0, 0.70);
     padding: 10px;
-    }
-    
-    footer a{
-      position: fixed; /* Fixed/sticky position */
-      bottom: 7px; /* Place the button at the bottom of the page */
-      right: 20px; /* Place the button 30px from the right */
-      z-index: 9999; /* Make sure it does not overlap */
-      color: white; /* Text color */
-      cursor: pointer; /* Add a mouse pointer on hover */
-      font-size: 18px; /* Increase font size */
-      }
+  }
+
+  footer a {
+    position: fixed;
+    bottom: 7px;
+    right: 20px;
+    z-index: 9999;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+  }
 }

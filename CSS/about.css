@@ -1,5 +1,5 @@
-*{
-  margin: 0; 
+* {
+  margin: 0;
   padding: 0;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   box-sizing: border-box;
@@ -8,25 +8,31 @@
 html {
   scroll-behavior: smooth;
 }
-.content {
-  margin: 0; 
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
   background-image: url(../Images/about-bg.png);
   background-color: #808080;
-  background-size: 1280px;
-
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.navbar{
+
+.navbar {
   padding: 15px;
 }
 
 .navbar {
-display: flex;
-align-items: center;
-justify-content: space-between;
-flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.logo{
+.logo {
   width: 130px;
 }
 
@@ -34,8 +40,9 @@ flex-wrap: wrap;
   display: inline-block;
   list-style: none;
 }
+
 nav ul li a {
-  color:white;
+  color: white;
   text-decoration: none;
   font-size: 18px;
   margin-right: 100px;
@@ -43,61 +50,68 @@ nav ul li a {
 }
 
 nav a.active {
-  color: rgb(254, 201,61);
-  border-bottom: 4px solid rgb(254, 201,61);
+  color: rgb(254, 201, 61);
+  border-bottom: 4px solid rgb(254, 201, 61);
   text-shadow: 2px 2px rgb(53, 53, 53);
 }
-nav ul li a::after{
+
+nav ul li a::after {
   content: '';
   width: 0;
   height: 4px;
-  background: rgb(254, 201,61);
+  background: rgb(254, 201, 61);
   position: absolute;
   left: 0;
   top: -6px;
   transition: 0.5s;
 }
-nav ul li a:hover::after {  
-  width: 100%; 
+
+nav ul li a:hover::after {
+  width: 100%;
 }
-.navbar ul li a:hover{
-  color: rgb(254, 201,61);
+
+.navbar ul li a:hover {
+  color: rgb(254, 201, 61);
   text-shadow: 2px 2px rgb(53, 53, 53);
 }
 
 h1 {
-  color:white;
+  color: white;
   font-size: 50px;
   margin-left: 500px;
   text-shadow: 2px 2px rgb(18, 18, 18);
 }
-h1 span{
-  color: rgb(254, 201,61);
+
+h1 span {
+  color: rgb(254, 201, 61);
 }
+
 /* THIS STYLE IS FOR THE HEADER/MAIN HEADER OF THE HOME PAGE */
 
 .header-text {
-margin-top: 30px;
-width: 600px;
-margin-left: 500px;
-font-size: 25px;
-color: rgb(255, 255, 255);
-background-color: rgba(0, 0, 0, 0.40);
-border-radius:15px;
-padding: 20px;
+  margin-top: 30px;
+  width: 600px;
+  margin-left: 500px;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.40);
+  border-radius: 15px;
+  padding: 20px;
 
 }
-.header-text a{
-  color:white;
+
+.header-text a {
+  color: white;
 }
 
-.header-text p span{
-  color: rgb(254, 201,61);
+.header-text p span {
+  color: rgb(254, 201, 61);
 }
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* THIS STYLE IS FOR THE ABOUT ME SUMMARY SECTION */
-#about{
+#about {
   padding: 50px 0px;
   color: rgb(233, 233, 233);
   background-color: black;
@@ -105,20 +119,21 @@ padding: 20px;
   margin-bottom: 0px;
 }
 
-.container{
+.container {
   margin: 0px 100px;
 }
-.row{
-  display: flex ;
+
+.row {
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.about-col1{
+.about-col1 {
   flex-basis: 20%;
 }
 
-.about-col1 img{
+.about-col1 img {
   width: 100%;
   border-radius: 15px;
 }
@@ -128,13 +143,13 @@ padding: 20px;
 
 }
 
-.sub-title{
+.sub-title {
   font-size: 30px;
   margin-bottom: 30px;
 }
 
 /* THIS IS THE ASIDE REFERENCES */
-.references{
+.references {
   display: inline-block;
   background-color: black;
   width: 250px;
@@ -147,48 +162,51 @@ padding: 20px;
 }
 
 .references ul li {
-  margin-top:20px;
+  margin-top: 20px;
   text-align: center;
   list-style: none;
   color: white;
   font-size: 18px;
 }
 
-.references ul li span{
-  color:rgb(233, 233, 233);
+.references ul li span {
+  color: rgb(233, 233, 233);
   font-size: 14px;
 }
 
-.references ul li a{
-  color:rgb(254, 201,61);
+.references ul li a {
+  color: rgb(254, 201, 61);
 }
-.references ul li a:hover{
-  color:rgb(22,105,161);
+
+.references ul li a:hover {
+  color: rgb(22, 105, 161);
 }
 
 
 /* THIS ARTICLE IS FOR THE CREDENTIALS SECTIONS */
 
-#credentials{
+#credentials {
   display: inline;
   float: right;
 }
-.credentials{
+
+.credentials {
   padding: 20px;
   background-color: black;
-  color:  rgb(254, 201,61);
+  color: rgb(254, 201, 61);
   margin: 35px 20px;
   border-radius: 15px;
   width: 940px;
   height: 350px;
   position: relative;
 }
-.tab-titles{
+
+.tab-titles {
   display: flex;
   margin: 0px 50px;
 }
 
-.tab-links{
+.tab-links {
   margin-left: 150px;
   font-size: 25px;
   font-weight: 500;
@@ -196,19 +214,19 @@ padding: 20px;
   position: relative;
 }
 
-.tab-links::after{
+.tab-links::after {
   content: '';
   width: 0;
   height: 4px;
-  background-color: rgb(254, 201,61);
+  background-color: rgb(254, 201, 61);
   position: absolute;
-  left:0;
+  left: 0;
   bottom: -8px;
-  transition:0.5s;
+  transition: 0.5s;
 }
 
-.tab-links.active-link::after{
-  width:50%;
+.tab-links.active-link::after {
+  width: 50%;
 
 }
 
@@ -221,110 +239,123 @@ padding: 20px;
   font-size: 18px;
 }
 
-.tab-contents ul li span{
-  color:rgb(254, 201,61) ;
+.tab-contents ul li span {
+  color: rgb(254, 201, 61);
   font-size: 14px;
 }
 
-.tab-contents{
+.tab-contents {
   display: none;
   height: 185px;
   margin-top: 25px;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
   display: block;
 }
 
 
-.download{
+.download {
   z-index: 99;
   margin: 0 auto;
   text-align: center;
   padding: 30px;
 }
 
-.download a{
+.download a {
   padding: 16px 35px;
   text-decoration: none;
-  border: 1px solid rgb(254, 201,61) ;
+  border: 1px solid rgb(254, 201, 61);
   background-color: transparent;
   letter-spacing: 2px;
-  color: rgb(254, 201,61) ;
+  color: rgb(254, 201, 61);
   margin: 0 auto;
- 
+
 }
-.download a:hover{
-  border: 1px solid rgb(0, 0, 0) ;
-  background-color: rgb(254, 201,61) ;
+
+.download a:hover {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(254, 201, 61);
   letter-spacing: 4px;
-  color: rgb(0, 0, 0) ;
+  color: rgb(0, 0, 0);
 }
 
 
 /* CERTIFICATE CAROUSEL SECTION CERTIFICATE CAROUSEL SECTION CERTIFICATE CAROUSEL SECTION */
-.certificates h2{
+.certificates h2 {
   text-align: center;
-  color:  rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   text-shadow: 2px 2px rgb(18, 18, 18);
   font-size: 30px;
   margin-bottom: 40px;
 }
-.carousel{
+
+.carousel {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.70);
 }
 
-.swiper{
+.swiper {
   width: 80%;
   height: fit-content;
 }
 
-.swiper-slide img{
+.swiper-slide img {
   margin-top: 50px;
   margin-left: 200px;
   height: 80vh;
 }
 
-.swiper .swiper-button-prev, .swiper .swiper-button-next {
-  color: rgb(254, 201,61) ;
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: rgb(254, 201, 61);
 }
 
-.swiper .swiper-pagination-bullet-active{
-  background-color: rgb(254, 201,61) ;
+.swiper .swiper-pagination-bullet-active {
+  background-color: rgb(254, 201, 61);
 }
 
 
 
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER  */
-footer{
-  position:fixed;
-  bottom:0;
+footer {
+  position: fixed;
+  bottom: 0;
   margin: 0px;
-  color:  rgb(254, 201,61);
+  color: rgb(254, 201, 61);
   font-size: 12px;
   background-color: rgba(0, 0, 0, 0.70);
   padding: 10px;
   width: 100%;
   z-index: 9999;
 }
-footer a{
-  position: fixed; /* Fixed/sticky position */
-  bottom: 10px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  font-size: 18px; /* Increase font size */
-  }
- .menu-bar{
+
+footer a {
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 10px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+.menu-bar {
   display: none;
 
 }
 
- .xmark-solid{
+.xmark-solid {
   display: none;
 }
 
@@ -337,144 +368,159 @@ footer a{
 
 
 @media only screen and (max-width: 640px) {
-  .content{
+  .content {
     background-image: url(../Images/phone-about-bg.png);
     background-size: contain;
   }
+
   h1 {
     margin: auto;
     text-align: center;
     font-size: 60px;
   }
-/* THIS IS FOR THE ABOUT SECTION THIS IS FOR THE ABOUT SECTION THIS IS FOR THE ABOUT SECTION */
-  #about{
-    width:auto;
+
+  /* THIS IS FOR THE ABOUT SECTION THIS IS FOR THE ABOUT SECTION THIS IS FOR THE ABOUT SECTION */
+  #about {
+    width: auto;
   }
-  .container{
+
+  .container {
     margin: 0px 50px;
   }
-  .about-col1, .about-col2{
+
+  .about-col1,
+  .about-col2 {
     flex-basis: 100%;
   }
 
-  .about-col1 img{
+  .about-col1 img {
     margin: auto;
   }
 
- .about-col2 h2{
-  text-align: center;
-  font-size: 30px;
-  margin-top: 20px;
- }
+  .about-col2 h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+  }
 
- .about-col2 p{
-  font-size: 18px;
-  text-align:justify;
-  
- }
-/* 
+  .about-col2 p {
+    font-size: 18px;
+    text-align: justify;
+
+  }
+
+  /* 
  REFERENCES ASIDE SECTION REFERENCES ASIDE SECTION REFERENCES ASIDE SECTION REFERENCES ASIDE SECTION */
- .references{
-  display: block;
-  margin: 30px;
-  width:auto;
-  height: 330px;
-  padding: 30px;
-  color: rgb(233, 233, 233);
-  border-radius: 15px;
-}
-.references h3{
-  text-align: center;
-  font-size: 25px;
-}
+  .references {
+    display: block;
+    margin: 30px;
+    width: auto;
+    height: 330px;
+    padding: 30px;
+    color: rgb(233, 233, 233);
+    border-radius: 15px;
+  }
 
-.references ul li {
-  margin-top:30px;
-  font-size: 18px;
-}
-.references ul li span{
-  font-size: 14px;
-}
-.references ul li a{
-  color:rgb(254, 201,61);
-}
-.references ul li a:hover{
-  color:rgb(22,105,161);
-}
-/* CREDENTIALS SECTION CREDENTIALS SECTION CREDENTIALS SECTION CREDENTIALS SECTION  */
-#credentials{
-  display: block;
-  float: none;
-}
-.credentials{
-  display: block;
-  margin: auto;
-  width:auto;
-  padding: 30px;
-  background-color: black;
-  color:  rgb(254, 201,61);
-  height: 350px;
-  border-radius: 0;
-  margin-bottom: 30px;
-}
+  .references h3 {
+    text-align: center;
+    font-size: 25px;
+  }
 
-.tab-titles{
-  display: flex;
-  width: auto;
-  margin: auto;
-}
+  .references ul li {
+    margin-top: 30px;
+    font-size: 18px;
+  }
 
-.tab-links{
-  margin: 0 auto;
-  font-size: 20px;
-  width: auto;
-}
+  .references ul li span {
+    font-size: 14px;
+  }
+
+  .references ul li a {
+    color: rgb(254, 201, 61);
+  }
+
+  .references ul li a:hover {
+    color: rgb(22, 105, 161);
+  }
+
+  /* CREDENTIALS SECTION CREDENTIALS SECTION CREDENTIALS SECTION CREDENTIALS SECTION  */
+  #credentials {
+    display: block;
+    float: none;
+  }
+
+  .credentials {
+    display: block;
+    margin: auto;
+    width: auto;
+    padding: 30px;
+    background-color: black;
+    color: rgb(254, 201, 61);
+    height: 350px;
+    border-radius: 0;
+    margin-bottom: 30px;
+  }
+
+  .tab-titles {
+    display: flex;
+    width: auto;
+    margin: auto;
+  }
+
+  .tab-links {
+    margin: 0 auto;
+    font-size: 20px;
+    width: auto;
+  }
 
 
-/* CAROUSEL CERTIFICATE CAROUSEL CERTIFICATE CAROUSEL CERTIFICATE CAROUSEL CERTIFICATE */
-.carousel{
-  height: 50vh;
-}
-.certificates{
-  padding-bottom: 30px;
-}
-.swiper-slide img{
-  margin: 30px 0px;
-  width: auto;
-  height: 40vh;
-}
+  /* CAROUSEL CERTIFICATE CAROUSEL CERTIFICATE CAROUSEL CERTIFICATE CAROUSEL CERTIFICATE */
+  .carousel {
+    height: 50vh;
+  }
 
-  .menu-bar{
+  .certificates {
+    padding-bottom: 30px;
+  }
+
+  .swiper-slide img {
+    margin: 30px 0px;
+    width: auto;
+    height: 40vh;
+  }
+
+  .menu-bar {
     display: block;
     width: 35px;
-    cursor:pointer;
+    cursor: pointer;
     /* 
     width: 45px;
     border: 2px solid black;
     padding: 5px; */
   }
-  
-   .xmark-solid{
+
+  .xmark-solid {
     display: block;
     width: 40px;
   }
-  .navbar{
-    display: block;
-  } 
 
-  .navbar ul {     
+  .navbar {
+    display: block;
+  }
+
+  .navbar ul {
     position: fixed;
     display: block;
     width: 100%;
-    top:-350px;
-    left:0;
+    top: -350px;
+    left: 0;
     height: 100vh;
     padding-top: 60px;
     margin-top: 30px;
     transition: 0.5s;
   }
 
-  .navbar ul li{  
+  .navbar ul li {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
     display: block;
@@ -483,23 +529,26 @@ footer a{
     text-align: center;
   }
 
-  .navbar ul li a {  
+  .navbar ul li a {
     margin-bottom: 5px;
     font-size: 30px;
   }
-  .navbar ul .xmark-solid{
-    background-color:  rgb(254, 201,61);
+
+  .navbar ul .xmark-solid {
+    background-color: rgb(254, 201, 61);
     position: fixed;
     cursor: pointer;
     padding: 5px;
   }
-  .navbar .menu-bar{
+
+  .navbar .menu-bar {
     position: absolute;
     top: 35px;
-    right:55px;
+    right: 55px;
   }
-/* FOOTER FOOTER FOOTER FOOTER FOOTER */
-  footer{
+
+  /* FOOTER FOOTER FOOTER FOOTER FOOTER */
+  footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -507,15 +556,15 @@ footer a{
     font-size: 12px;
     background-color: rgba(0, 0, 0, 0.70);
     padding: 10px;
-    }
-    
-    footer a{
-      position: fixed; /* Fixed/sticky position */
-      bottom: 7px; /* Place the button at the bottom of the page */
-      right: 20px; /* Place the button 30px from the right */
-      z-index: 9999; /* Make sure it does not overlap */
-      color: white; /* Text color */
-      cursor: pointer; /* Add a mouse pointer on hover */
-      font-size: 18px; /* Increase font size */
-      }
+  }
+
+  footer a {
+    position: fixed;
+    bottom: 7px;
+    right: 20px;
+    z-index: 9999;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+  }
 }

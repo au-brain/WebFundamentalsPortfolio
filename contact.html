@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="CSS/contact.css">
   <link rel="shortcut icon" href="Images/aubrain-icon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Aubrain - Contact Me</title>
 </head>
+
 <body>
-  <div class = "content">
+  <div class="content">
     <!-- THIS IS THE NAVIGATION BAR HTML -->
-    <header id = "main-header" style="position: relative;">
-        <nav class="navbar">
-          <img src="Images/aubrain-logo.png" alt="Aubrain-logo" class="logo">
-          
-          <ul id="menu-bars">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>       
-            <li><a href="contact.html" class = "active">Contact</a></li>
-            <img src="Images/xmark-solid.svg" alt="close-icon" aria-label='close icon' class = "xmark-solid" onclick="closemenu()">
-          </ul>
-          <img src="Images/menu-bar.svg" alt="menu-bar" aria-label='menu bar' class = "menu-bar" onclick="openmenu()">
-        </nav> 
+    <header id="main-header" style="position: relative;">
+      <nav class="navbar">
+        <img src="Images/aubrain-logo.png" alt="Aubrain-logo" class="logo">
+
+        <ul id="menu-bars">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <img src="Images/xmark-solid.svg" alt="close-icon" aria-label='close icon' class="xmark-solid"
+            onclick="closemenu()">
+        </ul>
+        <img src="Images/menu-bar.svg" alt="menu-bar" aria-label='menu bar' class="menu-bar" onclick="openmenu()">
+      </nav>
     </header>
     <main>
       <section>
         <h1><span>Contact</span> Me</h1>
-        <article >
+        <article>
           <div id="contact">
-            
+
             <div class="container">
               <div class="row">
-          
+
                 <div class="contact-left">
                   <h4 class="sub-title">You can contact me via:</h4>
                   <p><i class="fa-solid fa-envelope"></i>aubraintours@gmail.com</p>
                   <p><i class="fa-solid fa-phone"></i>0912345678</p>
                   <div class="social-icons">
-                    <a href="https://www.facebook.com/aubraintours" target="_blank" ><i class="fa-brands fa-facebook" title="Facebook Page" aria-hidden="true"></i><span class="visually-hidden">Facebook Page</span></a>
-                    <a href="https://www.linkedin.com/feed/" target="_blank" ><i class="fa-brands fa-linkedin" title="LinkedIn Profile" aria-hidden="true" ></i><span class="visually-hidden">LinkedIn Profile</span></a>
-                    <a href="https://www.wcatravel.com/aubraintours" target="_blank" ><i class="fa-solid fa-globe" title="WCA Aubraintours Website" aria-hidden="true" ></i><span class="visually-hidden">Website</span></a>
+                    <a href="https://www.facebook.com/aubraintours" target="_blank"><i class="fa-brands fa-facebook"
+                        title="Facebook Page" aria-hidden="true"></i><span class="visually-hidden">Facebook
+                        Page</span></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"
+                        title="LinkedIn Profile" aria-hidden="true"></i><span class="visually-hidden">LinkedIn
+                        Profile</span></a>
+                    <a href="https://www.wcatravel.com/aubraintours" target="_blank"><i class="fa-solid fa-globe"
+                        title="WCA Aubraintours Website" aria-hidden="true"></i><span
+                        class="visually-hidden">Website</span></a>
                   </div>
-                  
-                  <p>I'd also love to talk over a cup of coffee, you may send me a message or schedule an appointment on my calendar below.</p>
+
+                  <p>I'd also love to talk over a cup of coffee, you may send me a message or schedule an appointment on
+                    my calendar below.</p>
                   <img src="Images/me-coffee.jpg" alt="Me Coffee" width="270">
                 </div>
 
@@ -53,13 +65,13 @@
                     <label for="name">Name</label>
                     <input type="text" id="name" name="Name" placeholder="Your Name" required>
                     <label for="email">Email</label>
-                    <input type="email"  id="email" name="Email" placeholder="Your email" required>
+                    <input type="email" id="email" name="Email" placeholder="Your email" required>
                     <label for="message">Message</label>
                     <textarea id="message" name="Message" rows="6" placeholder="Your Message" required></textarea>
                     <button type="submit">Submit</button>
                   </form> <span id="msg"></span>
                 </div>
-                
+
               </div>
             </div>
           </div>
@@ -68,15 +80,19 @@
 
       <section id="calendar">
         <article class="google-extras">
-          <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FManila&mode=AGENDA&src=YXVicm9zZXBlc2NhZGVyb0BnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=dWhrN3AyaWcxNDh2Y25nYTMyM2czaDhkbGc0azdkNmNAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4ucGhpbGlwcGluZXMjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%23F4511E&color=%230B8043" style="border:solid 1px #777"></iframe>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506609.9131584569!2d125.45107234999999!3d7.253364699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d9f519e327f%3A0xb53a24589f79c573!2sDavao%20City%2C%20Davao%20del%20Sur!5e0!3m2!1sen!2sph!4v1672422280395!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
-        
+          <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FManila&mode=AGENDA&src=YXVicm9zZXBlc2NhZGVyb0BnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=dWhrN3AyaWcxNDh2Y25nYTMyM2czaDhkbGc0azdkNmNAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4ucGhpbGlwcGluZXMjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%23F4511E&color=%230B8043"
+            style="border:solid 1px #777"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506609.9131584569!2d125.45107234999999!3d7.253364699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d9f519e327f%3A0xb53a24589f79c573!2sDavao%20City%2C%20Davao%20del%20Sur!5e0!3m2!1sen!2sph!4v1672422280395!5m2!1sen!2sph"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
+
         </article>
-        </section>
-      
+      </section>
+
     </main>
   </div>
-  
+
   <footer>
     <p>Copyright © 2022 Aubrain Virtual. All wrongs reversed.</p>
     <a href="#main-header">Top</a>
@@ -84,33 +100,33 @@
 
   <script>
     var menubars = document.getElementById("menu-bars");
-function openmenu(){
-  menubars.style.top = "0px";  
-}
-function closemenu(){
-  menubars.style.top = "-350px";  
-}
+    function openmenu() {
+      menubars.style.top = "0px";
+    }
+    function closemenu() {
+      menubars.style.top = "-350px";
+    }
   </script>
- <script src="https://smtpjs.com/v3/smtp.js"></script>
- <script src="Javascript/main.js"></script>
- <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxMh5XWSRJCykpyvM79aURaHQzAYAWQ6I4Z5hTgaJgoPDQsOvodlUyiTVLnAX-gQOdplw/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message sent!" 
-        setTimeout(function(){
-          msg.innerHTML = "" 
-        },5000)
-        form.reset()
-      })
-      
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="Javascript/main.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxMh5XWSRJCykpyvM79aURaHQzAYAWQ6I4Z5hTgaJgoPDQsOvodlUyiTVLnAX-gQOdplw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent!"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
 
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
+
 </html>
