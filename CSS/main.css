@@ -21,7 +21,6 @@ body {
   background-attachment: fixed;
 }
 
-
 /* NAVBAR ICONS FOR SMALL SCREENS NAVBAR ICONS FOR SMALL SCREENS NAVBAR ICONS FOR SMALL SCREENS */
 .menu-bar {
   display: none;
@@ -270,6 +269,22 @@ h2 {
   margin-top: 30px;
 }
 
+.course-1 a {
+  color: rgb(255, 255, 255);
+}
+
+.course-1 a:hover {
+  color: rgb(22, 105, 161);
+}
+
+.course-2 a {
+  color: rgb(255, 255, 255);
+}
+
+.course-2 a:hover {
+  color: rgb(22, 105, 161);
+}
+
 .course-3 a {
   color: rgb(255, 255, 255);
 }
@@ -322,6 +337,34 @@ h2 {
   justify-content: Center;
   padding-bottom: 40px;
 }
+
+/* VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR */
+
+#validator{
+  background-color: rgb(65, 65, 65);
+  padding-bottom: 30px;
+}
+
+#validator h2{
+  color: white;
+  padding: 20px;
+  padding-bottom: 0;
+  
+}
+#validator div{
+ margin: 30px;
+ margin-bottom: 10px;
+}
+#validator img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  object-fit: fill;
+ }
+ /* VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR*/
+
+
 
 
 footer {
@@ -410,7 +453,7 @@ footer a {
   }
 
   h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .course-1 {
@@ -445,6 +488,9 @@ footer a {
     margin: auto;
     width: 90%;
   }
+  .course-2 .sample {
+    font-size: 14px;
+  }
 
   .certificates {
     display: block;
@@ -454,8 +500,6 @@ footer a {
     border-radius: 0;
     padding-bottom: 40px;
   }
-
-
 
   /* NAVBAR ICONS FOR SMALL SCREENS NAVBAR ICONS FOR SMALL SCREENS NAVBAR ICONS FOR SMALL SCREENS */
   .menu-bar {
@@ -512,7 +556,7 @@ footer a {
     font-size: 30px;
   }
 
-  .navbar ul .xmark-solid {
+  .navbar .xmark-solid {
     background-color: rgb(254, 201, 61);
     position: fixed;
     cursor: pointer;
@@ -533,6 +577,22 @@ footer a {
     width: 360px;
     height: 240px;
   }
+  /* VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR */
+
+#validator h2{
+  font-size: 20px;
+  padding-bottom: 0;
+}
+#validator div{
+ margin: 20px;
+ margin-bottom: 10px;
+}
+#validator img{
+  width: 100%;
+ }
+ /* VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR VALIDATOR */
+
+
 
   /* FOOTER FOOTER FOOTER FOOTER FOOTER */
   footer {
